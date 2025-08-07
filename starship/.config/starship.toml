@@ -51,7 +51,7 @@ format = '[ $user ]($style)'
 
 [directory]
 style = "bg:blue fg:black"
-format = "[ $path ]($style)"
+format = "[$path]($style)"
 truncate_to_repo = true
 truncation_length = 3
 truncation_symbol = "…/"
@@ -61,6 +61,22 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:yellow"
+format = '[[$symbol $branch ](fg:black bg:yellow)]($style)'
+
+[git_status]
+style = "bg:yellow"
+format = '[[($all_status$ahead_behind)](fg:black bg:yellow)]($style)'
+
+[git_commit]
+tag_symbol = ' 󰓹 '
+style = "bg:yellow"
+format =  '[[$tag](fg:black bg:yellow)]($style)'
+tag_disabled = false
+only_detached = false
 
 [python]
 symbol = ' '
@@ -73,22 +89,6 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = ""
 style = "bg:green"
 format = '[[ $symbol ($version) ](fg:black bg:green)]($style)'
-
-[git_branch]
-symbol = ""
-style = "bg:yellow"
-format = '[[ $symbol $branch ](fg:black bg:yellow)]($style)'
-
-[git_status]
-style = "bg:yellow"
-format = '[[($all_status$ahead_behind )](fg:black bg:yellow)]($style)'
-
-[git_commit]
-tag_symbol = ' 󰓹 '
-style = "bg:yellow"
-format =  '[[$tag](fg:black bg:yellow)]($style)'
-tag_disabled = false
-only_detached = false
 
 
 [palettes.catppuccin_mocha]

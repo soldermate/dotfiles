@@ -53,7 +53,7 @@ set -g mode-style fg="#de935f"
 set -g status-right-length 100
 set -g status-right-style fg=black
 set -g status-right-style bold
-set -g status-right '#[fg=#f99157,bg=#2d2d2d] %H:%M |#[fg=#6699cc] %y.%m.%d '
+set -g status-right '#[fg=#f99157,bg=#2d2d2d] #H '
 
 # make background window look like white tab
 set-window-option -g window-status-style bg=default
